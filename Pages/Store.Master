@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Store.master.cs" Inherits="Apotheke.Pages.Store" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Аптека</title>
+   <link rel="stylesheet" href="/Content/Styles.css" />
+     <%: System.Web.Optimization.Scripts.Render("~/bundles/validation") %>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div id="header">
+                 <div class="search-box"> 
+<asp:TextBox type="text1" placeholder="Поиск" style="margin-left:50px; margin-top:10px " id="searchInput1" 
+runat="server" AutoPostBack ="true" />  
+                     <p class="actionButtons" style ="margin-left:270px; margin-top:-22px; width:25px">
+<a href="<%= FindUrl %>" style="background-color:#808080">Найти</a>
+                  </p>      
+    </div>
+                 <a id="logintext" href="<%= LoginUrl %>">Войти | Выйти</a>
+                 <a id="registertext" href="<%= RegisterUrl %>">Зарегистрироваться</a>
+                 
+                 <div id="his" runat="server">
+                 <a   href="<%= HistoryUrl %>" >История заказов</a>
+                     </div>
+                 <div id="welcome" runat="server">
+        </div>
+                 <AP:CartSummary runat = "server" />
+            <div class="title">Аптека.Ру - все лекарства в одном месте</div>
+        </div>
+        <div id="categories">
+            <AP:CategoryLinks runat="server" />
+        </div>
+           <div>
+            <asp:ContentPlaceHolder ID="bodyContent" runat="server" />
+        </div>
+        </div>
+    </form>
+</body>
+</html>

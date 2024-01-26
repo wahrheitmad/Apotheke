@@ -1,0 +1,352 @@
+﻿6body {
+    font-family: Cambria, Georgia, "Times New Roman";
+    margin: 0;
+}
+
+div#header div.title, div.item h3, div.item h4, div.pager a {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+
+div#header {
+    background-color: #444;
+    border-bottom: 2px solid #111;
+    color: white;
+}
+
+    div#header div.title {
+        font-size: 2em;
+        padding: .6em;
+    }
+
+div#content {
+    border-left: 0.5px solid gray;
+    margin-left: 10.1em;
+    padding: 1em;
+}
+
+div#welcome{
+    margin-left:50px;
+    margin-top:13px;
+}
+
+div#categories {
+    float: left;
+    width: 9.5em;
+    padding: 0.3em;
+    background-color: #f7f5f5;
+    
+}
+
+/*div.item {
+    border-top: 1px dotted gray;
+    padding-top: .7em;
+    margin-bottom: 0.3em;
+}
+
+    div.item:first-child {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    div.item h3 {
+        font-size: 1.3em;
+        margin: 0 0 .25em 0;
+    }
+
+    div.item h4 {
+        font-size: 1.1em;
+        margin: .4em 0 0 0;
+    }*/
+
+/*.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    flex: 0 1 24%;
+}*/
+
+
+div.cards {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.card{
+    margin-bottom: 15px;
+    background: white;
+    flex: 0 1 30%;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width:40px;
+    height:550px;
+}
+
+    article.card button {
+        background-image: url("pngegg (2).png");
+        position: relative;
+        left: -35px;
+        top: -70px;
+        background-repeat: no-repeat;
+        background-color: rgba(28,28,28,0);
+        border-color: navy;
+        border-radius: 35px;
+        width: 75px;
+        height: 75px;
+        
+    }
+
+
+article.card h2
+{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+article.card h3
+{
+   margin-left: 20px;
+   margin-top: 50px;
+}
+
+article.card h3
+{
+   margin-left: 20px;
+   margin-top: 50px;
+}
+
+article.card h4 
+{
+   margin-left: 20px;
+   margin-top: 50px;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    margin-left: 30%;
+}
+    
+.card:hover
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+    .container {
+        padding: 2px 16px;
+    }
+
+a#registertext
+{
+  margin-left: 15px;
+}
+
+a#logintext
+{ 
+   flex-shrink:45;   
+   inline-size:10px;
+   margin-left:50px;
+}
+a:link {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div#his
+{
+    margin-left:50px;
+    margin-top:7px;
+}
+    div#his a {
+        margin-left: 0px;
+    }
+
+
+    
+
+div.pager {
+    text-align: right;
+    border-top: 2px solid silver;
+    padding: .5em 0 0 0;
+    margin-top: 1em;
+}
+
+    div.pager a {
+        font-size: 1.1em;
+        color: #666;
+        text-decoration: none;
+        padding: 0 .4em 0 .4em;
+    }
+
+        div.pager a:hover {
+            background-color: Silver;
+        }
+
+        div.pager a.selected {
+            background-color: #353535;
+            color: white;
+        }
+
+div#categories a {
+    font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial;
+    display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    color: Black;
+    border-bottom: 3px solid silver;
+}
+
+    div#categories a.selected {
+        background-color: #666;
+        color: White;
+    }
+
+    div#categories a:hover {
+        background-color: #CCC;
+    }
+
+    div#categories a.selected:hover {
+        background-color: #666;
+    }
+
+   .card button {
+    color: White;
+    background-color: #666;
+    border: 1px solid black;
+    float: right;
+    }
+
+h2 {
+    margin-top: 0.3em
+}
+
+#cartTable {
+    width: 90%;
+}
+
+    #cartTable tfoot td {
+        border-top: 1px dotted gray;
+        font-weight: bold;
+    }
+
+    #cartTable thead th {
+        text-align: right;
+    }
+
+        #cartTable thead th:first-child {
+            text-align: center;
+        }
+
+        #cartTable thead th:nth-child(2) {
+            text-align: left;
+        }
+
+    #cartTable tbody td {
+        text-align: right;
+    }
+
+        #cartTable tbody td:first-child {
+            text-align: center;
+        }
+
+        #cartTable tbody td:nth-child(2) {
+            text-align: left;
+        }
+
+    #cartTable tfoot tr td {
+        text-align: right;
+    }
+
+#orderTable {
+    width: 90%;
+}
+
+    #orderTable tfoot td {
+        border-top: 1px dotted gray;
+        font-weight: bold;
+    }
+
+    #orderTable thead th {
+        text-align: right;
+    }
+
+        #orderTable thead th:first-child {
+            text-align: center;
+        }
+
+        #orderTable thead th:nth-child(2) {
+            text-align: left;
+        }
+
+    #orderTable tbody td {
+        text-align: right;
+    }
+
+        #orderTable tbody td:first-child {
+            text-align: center;
+        }
+
+        #orderTable tbody td:nth-child(2) {
+            text-align: left;
+        }
+
+    #orderTable tfoot tr td {
+        text-align: right;
+    }
+
+
+p.actionButtons {
+    text-align: center;
+}
+
+.actionButtons a, button.actionButtons {
+    font: .8em Arial;
+    color: White;
+    margin: .5em;
+    text-decoration: none;
+    padding: .15em 1.5em .2em 1.5em;
+    background-color: #353535;
+    border: 1px solid black;
+}
+
+div#cartSummary {
+    float: right;
+    margin: .8em;
+    margin-bottom:1px;
+    color: Silver;
+    background-color: #555;
+    padding: .5em .5em .5em 1em;
+}
+
+    div#cartSummary a {
+        text-decoration: none;
+        padding: .4em 1em .4em 1em;
+        line-height: 2.1em;
+        margin-left: .5em;
+        background-color: #333;
+        color: White;
+        border: 1px solid black;
+    }
+
+.checkout label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    height: 36px;
+}
+
+.checkout div input {
+    width: 229px;
+    margin: 2px;
+    height: 19px;
+}
+
+#errors {
+    color: red;
+}
+
+
